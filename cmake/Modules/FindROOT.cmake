@@ -155,6 +155,7 @@ function(ROOT_GENERATE_DICTIONARY dictionary)
                      COMMAND ${ROOTCLING_EXECUTABLE} -f ${dictionary}.cxx
                              -noIncludePaths -inlineInputHeader
                              -c ${ARG_OPTIONS} ${includedirs} ${headerfiles} ${linkdefs}
+
                      DEPENDS ${headerfiles} ${linkdefs} VERBATIM)
 
   else ( )
